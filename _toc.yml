@@ -5,6 +5,6 @@ format: jb-book
 root: intro
 chapters:
 - file: markdown
-- file: thebe-notebook
+- file: notebooks
 - file: markdown-notebooks
 - file: myfile
