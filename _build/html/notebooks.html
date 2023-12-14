@@ -431,8 +431,10 @@ with your book. For more information about this, see <a class="reference externa
             ref: "master",
         },
         codeMirrorConfig: {
+            readOnly: true,
             theme: "abcdef",
             mode: "python"
+
         },
         kernelOptions: {
             name: "python3",
@@ -440,11 +442,7 @@ with your book. For more information about this, see <a class="reference externa
         },
         predefinedOutput: true
     }
-</script>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>&lt;script&gt;kernelName = &#39;python3&#39;&lt;/script&gt;
-</pre></div>
-</div>
-<div class="cell tag_thebe-init tag_hide-input docutils container">
+</script><div class="cell tag_thebe-init tag_hide-input docutils container">
 <details class="hide above-input">
 <summary aria-label="Toggle hidden content">
 <span class="collapsed">Show code cell source</span>
@@ -470,7 +468,7 @@ with your book. For more information about this, see <a class="reference externa
 </div>
 </div>
 </div>
-</section>
+<pre data-executable data-readonly>print("I cannot be modified")</pre></section>
 
     <script type="text/x-thebe-config">
     {
