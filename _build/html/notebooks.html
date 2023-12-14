@@ -423,6 +423,27 @@ document.write(`
 <h1>Example notebook<a class="headerlink" href="#example-notebook" title="Permalink to this heading">#</a></h1>
 <p>There is a lot more that you can do with outputs (such as including interactive outputs)
 with your book. For more information about this, see <a class="reference external" href="https://jupyterbook.org">the Jupyter Book documentation</a></p>
+<script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "executablebooks/jupyter-book",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./interactive"
+        },
+        predefinedOutput: true
+    }
+</script>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>&lt;script&gt;kernelName = &#39;python3&#39;&lt;/script&gt;
+</pre></div>
+</div>
 <div class="cell tag_thebe-init tag_hide-input docutils container">
 <details class="hide above-input">
 <summary aria-label="Toggle hidden content">
@@ -435,6 +456,19 @@ with your book. For more information about this, see <a class="reference externa
 </div>
 </div>
 </details>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># The variable for this is defined in the cell above!</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">my_hidden_variable</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>wow, it worked!
+</pre></div>
+</div>
+</div>
 </div>
 </section>
 
